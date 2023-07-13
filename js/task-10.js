@@ -14,9 +14,12 @@ const div = document.createElement("div");
 // }
 
 function createBoxes(amount) {
-  boxes.append(div);
-}
+  boxes.append("div");
 
+  // input.value === boxes.append(div);
+}
+div.style.width = "30px";
+div.style.height = "30px";
 // Створи функцію createBoxes(amount), яка приймає один параметр - число.
 // Функція створює стільки <div>, скільки вказано в amount і додає їх у div#boxes.
 

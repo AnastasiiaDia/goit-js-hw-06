@@ -14,4 +14,3 @@ plus.addEventListener("click", () => {
   counterValue += 1;
   value.textContent = counterValue;
 });
-console.log(counter);

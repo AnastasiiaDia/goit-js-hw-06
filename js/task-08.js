@@ -3,10 +3,10 @@ form.addEventListener("submit", onSubmit);
 function onSubmit(event) {
   event.preventDefault();
   const { email, password } = event.currentTarget.elements;
-  if (email.value && password.value) {
+  if (email.value.trim() && password.value.trim()) {
     let finalyObject = {
-      email: email.value,
-      password: password.value,
+      email: email.value.trim(),
+      password: password.value.trim(),
     };
     console.log(finalyObject);
   } else {
